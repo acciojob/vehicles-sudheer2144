@@ -4,6 +4,11 @@ public class Vehicle {
 
     private String name;
     private int currentSpeed;
+
+    public String getName() {
+        return name;
+    }
+
     private int currentDirection;
 
     public Vehicle(String name) {

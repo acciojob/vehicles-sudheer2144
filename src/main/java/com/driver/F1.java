@@ -5,6 +5,14 @@ public class F1 extends Car {
     private String F1name;
     private boolean isMan;
 
+    public String getName() {
+        return F1name;
+    }
+
+    public boolean getisManual() {
+        return isMan;
+    }
+
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
         this.F1name=name;
