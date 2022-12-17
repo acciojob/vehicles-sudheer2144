@@ -23,6 +23,7 @@ public class Car extends Vehicle {
         this.type = type;
         this.seats = seats;
     }
+    public Car(){}
 
     public void changeGear(int newGear){
         currentGear = newGear;
