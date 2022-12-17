@@ -8,10 +8,8 @@ public class Car extends Vehicle {
     private int doors;
     private int gears;
     private boolean isManual;
-    private int currentGear;
+    private int currentGear=1;
     private int seats;
-
-
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
@@ -32,7 +30,8 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-        move(newSpeed,newDirection);
+        setCurrentSpeed(newSpeed);
+        setCurrentDirection(newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 
