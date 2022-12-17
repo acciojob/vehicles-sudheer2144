@@ -4,11 +4,6 @@ public class Vehicle {
 
     private String name;
     private int currentSpeed;
-
-    public String getName() {
-        return name;
-    }
-
     private int currentDirection;
 
     public Vehicle(String name) {
@@ -16,6 +11,7 @@ public class Vehicle {
         this.currentDirection=0;
         this.currentSpeed=0;
     }
+
 
     public Vehicle() {}
 
@@ -35,6 +31,10 @@ public class Vehicle {
     public void stop(){
         currentSpeed=0;
         System.out.println("stop method called - The vehicle is stopped");
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getCurrentSpeed() {

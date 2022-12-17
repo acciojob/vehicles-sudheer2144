@@ -9,7 +9,7 @@ public class F1 extends Car {
         return F1name;
     }
 
-    public boolean getisManual() {
+    public boolean isManual() {
         return isMan;
     }
 
